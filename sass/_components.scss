@@ -10,6 +10,9 @@
 .search {
   flex: 0 0 40%;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &__input {
     font-family: inherit;
@@ -18,7 +21,7 @@
     background-color: var(--color-grey-light-2);
     border: none;
     padding: .7rem 2rem;
-    margin-right: -3.5rem;
+    margin-right: -3.25rem;
     border-radius: 10rem;
     width: 90%;
     transition: all .2s;
@@ -28,10 +31,20 @@
       width: 100%;
       background-color: var(--color-grey-light-3);
     }
+
+    &::placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
   }
 
   &__button {
     border: none;
+    background-color: var(--color-grey-light-2);
 
     &:focus {
       outline: none;
@@ -45,14 +58,32 @@
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
 /////////////////////////////////
 ////USER NAVIGATION
 .user-nav {
-  &__icon-box {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
 
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-box {
+    
   }
 
   &__icon {
