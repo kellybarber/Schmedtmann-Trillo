@@ -10,11 +10,11 @@
         
         <title>trillo &mdash; Your all-in-one booking app</title>
     </head>
+
     <body>
       <div class="container">
         <header class="header">
           <img src="img/logo.png" alt="trillo logo" class="logo">
-
           <form action="#" class="search">
             <input type="text" class="search__input" placeholder="Search Hotels">
             <button class="search__button">
@@ -85,7 +85,46 @@
           </nav>
 
           <main class="hotel-view">
-            Hotel Info
+            <div class="gallery">
+              <figure class="gallery__item">
+                <img src="img/hotel-1.jpg" alt="Photo of hotel" class="gallery__photo">
+              </figure>
+              <figure class="gallery__item">
+                <img src="img/hotel-2.jpg" alt="Photo of hotel" class="gallery__photo">
+              </figure>
+              <figure class="gallery__item">
+                <img src="img/hotel-3.jpg" alt="Photo of hotel" class="gallery__photo">
+              </figure>
+            </div>
+
+            <div class="overview">
+              <h1 class="overview__heading">Hotel Las Palmas</h1>
+              <div class="overview__stars">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-star"></use>
+                </svg>
+
+                <div class="overview__location">
+                  <svg class="side-nav__icon">
+                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                  </svg>
+                  <button class="btn-inline">Albufeira, Portugal</button>
+                </div>
+              </div>
+
+            </div>
           </main>
         </div>
       </div>
